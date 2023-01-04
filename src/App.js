@@ -26,7 +26,7 @@ import {
 import './App.css';
 
 function App() {
-	const activeMenu = 0;
+	const activeMenu = 1;
 
 	return (
 		<div>
