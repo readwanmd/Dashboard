@@ -23,10 +23,12 @@ import {
 	Stacked,
 } from './pages';
 
+import { useStateContext } from './contexts/ContextProvider';
+
 import './App.css';
 
 function App() {
-	const activeMenu = 1;
+	const { activeMenu } = useStateContext();
 
 	return (
 		<div>
@@ -48,7 +50,7 @@ function App() {
 							<Sidebar />
 						</div>
 					) : (
-						<div className="-0 dark:bg-secondary-dark-bg">
+						<div className="w-0 dark:bg-secondary-dark-bg">
 							<Sidebar />
 						</div>
 					)}
